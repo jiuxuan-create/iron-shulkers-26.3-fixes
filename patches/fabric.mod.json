@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "ironshulkerbox",
+  "version": "26.3-1.0.0",
+  "name": "Iron Shulker Boxes",
+  "description": "New Shulker Boxes with larger sizes, with in-place upgrade items.",
+  "authors": [
+    "Astryxion"
+  ],
+  "contributors": [
+    "ProgWML6"
+  ],
+  "contact": {
+    "homepage": "https://github.com/astryxion/Iron-Shulkers",
+    "sources": "https://github.com/astryxion/Iron-Shulkers",
+    "issues": "https://github.com/astryxion/Iron-Shulkers/issues"
+  },
+  "license": "GNU General Public License v3.0",
+  "icon": "assets/ironshulkerbox/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.astryxion.ironshulkerbox.IronShulkerBoxes",
+      "com.astryxion.ironshulkerbox.RegistryBootstrapFix"
+    ],
+    "client": [
+      "com.astryxion.ironshulkerbox.client.IronShulkerBoxesClientRegistration"
+    ],
+    "fabric-datagen": [
+      "com.astryxion.ironshulkerbox.IronShulkerBoxes"
+    ],
+    "jei_mod_plugin": [
+      "com.astryxion.ironshulkerbox.common.jei.IronShulkerBoxesJEI"
+    ],
+    "quickshulker": [
+      "com.astryxion.ironshulkerbox.compat.QuickShulkerCompat"
+    ],
+    "shulkerboxtooltip": [
+      "com.astryxion.ironshulkerbox.compat.SbtCompat"
+    ]
+  },
+  "accessWidener": "ironshulkerbox.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "jei": "*",
+    "modmenu": "*"
+  }
+}

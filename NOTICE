@@ -1,0 +1,37 @@
+Iron Shulker Boxes 26.3 unofficial fix build
+=============================================
+
+This work is a modified version of "Iron Shulker Boxes" 26.3-1.0.0.
+
+Original mod: Iron Shulker Boxes
+  Author: Astryxion
+  Contributor: ProgWML6
+  Sources: https://github.com/astryxion/Iron-Shulkers
+  License: GNU General Public License v3.0
+
+Modifications made by zXav1er on 2026-11-06:
+
+  1. Added com/astryxion/ironshulkerbox/RegistryBootstrapFix.java
+     (new Fabric main entrypoint that initialises the mod's menu types early).
+  2. Replaced fabric.mod.json entrypoints block to add the extra main
+     entrypoint and the optional quickshulker / shulkerboxtooltip keys.
+  3. Replaced the 102 files under data/ironshulkerbox/loot_table/blocks/
+     so that the container copy uses the 26.3 "modifier" entry field.
+  4. Rewrote com/astryxion/ironshulkerbox/common/item/IronShulkerBoxBlockItem.java
+     (same class name and constructor, added client-side click prediction).
+  5. Added com/astryxion/ironshulkerbox/compat/*.java
+     (BoxContainer, InsertPrediction, QuickShulkerCompat, IronBoxPreviewProvider,
+      SbtCompat, ScaledPreviewRenderer).
+  6. Changed the superclass of AbstractIronShulkerBoxBlock from
+     net.minecraft.world.level.block.BaseEntityBlock to
+     net.minecraft.world.level.block.ShulkerBoxBlock (bytecode patch, see
+     patches/tools/PatchSuper.java). No method bodies were changed by this patch.
+
+All modified files remain under the GNU General Public License v3.0.
+The full license text is in LICENSE.
+
+This build is NOT affiliated with, endorsed by, or supported by the original
+author. Please do not report problems with this build to the upstream project.
+
+Do not install this jar alongside the original ironshulkerbox jar: both use the
+same mod id and Fabric will refuse to start.
