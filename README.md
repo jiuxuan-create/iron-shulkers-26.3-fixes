@@ -1,10 +1,12 @@
 # Iron Shulker Boxes 26.3 — 非官方修复版 / Unofficial fix build
 
+因为在和朋友玩的时候遇到了这些bug，就用deepseek修了一下，顺便做了QuickShulker和ShulkerBoxTooltip的适配
+
 本仓库是 [Iron Shulker Boxes](https://github.com/astryxion/Iron-Shulkers) (id: ironshulkerbox, version 26.3-1.0.0)
 的非官方补丁集，修复了 26.3 版本上的三个实际存在的问题，并额外为两个可选模组做了适配。
 This repository is an unofficial patch set for Iron Shulker Boxes 26.3-1.0.0.
 
-原模组作者：Astryxion（贡献者 ProgWML6）。本补丁与原模组作者无关，未获其背书。
+原模组作者（移植者）：Astryxion（模组最初原作者：ProgWML6）。本补丁与原模组作者无关，未获其背书。
 Original mod by Astryxion (contributor ProgWML6). This patch is not affiliated with or endorsed by the original author.
 
 ## 修复内容 / What is fixed
