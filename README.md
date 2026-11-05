@@ -35,6 +35,16 @@ Original mod by Astryxion (contributor ProgWML6). This patch is not affiliated w
 - 已经丢失的物品无法找回。
 - RegistryBootstrapFix 只是把菜单类型注册提前到模组加载阶段。
 
+## 版本历史 / Version history
+
+| 版本 | 包含修复 | 说明 |
+|---|---|---|
+| [`fix1.2`](https://github.com/zXav1er/iron-shulkers-26.3-fixes/releases/tag/fix1.2) | 上表 1–5 全部 | 当前版本。方块改为继承原版 `ShulkerBoxBlock`；提示框面板按各档位真实列数排布（9 / 12 列）并横纵双向缩放 |
+| [`fix1.1`](https://github.com/zXav1er/iron-shulkers-26.3-fixes/releases/tag/fix1.1) | 1–4，另加提示框基础适配 | 修复收纳时潜影盒闪一下；提示框能显示全部格子（固定 9 列、按高度缩放） |
+| [`fix1.0`](https://github.com/zXav1er/iron-shulkers-26.3-fixes/releases/tag/fix1.0) | 1–3 | 最初的三个修复：服务器开箱崩溃、拆箱丢物品、QuickShulker 便携打开与收纳 |
+
+各版本产物的字节数、SHA256 与改动文件清单见 [VERSIONS.md](https://github.com/zXav1er/iron-shulkers-26.3-fixes/blob/main/VERSIONS.md)。
+
 ## 许可 / License
 
 GNU General Public License v3.0，与上游一致。详见 LICENSE 与 NOTICE。
